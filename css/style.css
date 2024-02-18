@@ -146,8 +146,36 @@ nav { display: none; }
     }
 }
 
+.my-services {
+    background-color: var(--clr-dark);
+    background-size: cover;
+    color: var(--clr-light);
+    text-align: center;
+}
 
-/*--clr-light: #FFE8D1;
-    --clr-dark: #052F5F;
-    --clr-accent: #62C6F2;
-    --clr-extra: #817F82;*/
+.section__title--services {
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section__title--services::after {
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-extra);
+    opacity: 0.25;
+}
+
+@media (min-width: 800px) {
+    .services {
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .service + .service {
+        margin-left: 2em;
+    }
+}
