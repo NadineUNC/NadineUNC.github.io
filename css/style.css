@@ -13,9 +13,9 @@
     --fw-reg: 300;
     --fw-bold: 900;
     
-    --clr-light: #FFE8D1;
-    --clr-dark: #052F5F;
-    --clr-accent: #62C6F2;
+    --clr-light: #FBFCF1;
+    --clr-dark: #236590;
+    --clr-accent: #99C7E6;
     --clr-extra: #817F82;
     
     --fs-h1: 3rem;
@@ -39,7 +39,7 @@
 /* General styles */
 
 body {
-    background: #FFE8D1;
+    background:var(--clr-light);
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
@@ -104,8 +104,34 @@ h3 { font-size: var(--fs-h3) }
 
 
 /* header */
-
-nav { display: none; }
+header {
+    background-color:var(--clr-dark);
+    padding: 5px 20px;
+    color: var(--clr-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  #logo {
+    width: 50px; /* Adjust the size of the logo as needed */
+    height: auto;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  
 
 /*  Intro section  */
 
