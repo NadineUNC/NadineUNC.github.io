@@ -7,11 +7,16 @@ const modal2 = document.getElementById('modal2');
 const overlay = document.getElementById('overlay');
 
 function openModal(modal) {
-    modal.classList.add('activemodal');
-    modal.classList.remove('inactivemodal');
-    overlay.classList.add('activeoverlay');
-    overlay.classList.remove('inactiveoverlay');
-    console.log('work')
+    if(modal.classList.contains('inactivemodal')){
+        closeModal();
+        modal.classList.add('activemodal');
+        modal.classList.remove('inactivemodal');
+        overlay.classList.add('activeoverlay');
+        overlay.classList.remove('inactiveoverlay');
+    }
+    else{
+        closeModal();
+    }
 }
 
 function closeModal() {
@@ -25,7 +30,6 @@ function closeModal() {
     }
     overlay.classList.remove('activeoverlay');
     overlay.classList.add('inactiveoverlay');
-    console.log('dont');
 }
 
 openModalButton1.addEventListener("click", function(event) {
