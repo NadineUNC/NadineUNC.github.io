@@ -353,7 +353,7 @@ header {
     border-radius: 10px;
     z-index: 10;
     background-color: var(--clr-light);
-    width: 500px;
+    width: 800px;
     max-width: 80%;
     color: var(--clr-dark);
 }
