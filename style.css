@@ -270,11 +270,13 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 0.5%;
 }
 
 .portfolio__item {
     background: var(--clr-accent);
     overflow: hidden;
+    height: 50%;
 }
 
 .portfolio__img {
