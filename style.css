@@ -275,6 +275,7 @@ header {
     background-color: var(--clr-dark);
     color: var(--clr-light);
     text-align: center;    
+    max-height: 800px;
 }
 
 .portfolio {
@@ -365,6 +366,7 @@ header {
     background-color: var(--clr-light);
     color: var(--clr-dark);
     min-width: 60%;
+    overflow: hidden;
 }
 
 
@@ -387,4 +389,33 @@ header {
 .modal-img {
     padding-left: 20%;
     padding-right: 20%;
+    background-color: var(--clr-accent);
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.modal-text {
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.modal-top{
+    background-color: var(--clr-dark);
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: var(--clr-light);
+    min-height: 2em;
+    /* border-radius: 9px; */
+}
+
+.closeButton {
+    position: absolute;
+    right: 1em;
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    border-radius: 8px;
+    border: none;
 }
