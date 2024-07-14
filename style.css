@@ -275,6 +275,9 @@ header {
     background-color: var(--clr-dark);
     color: var(--clr-light);
     text-align: center;
+    position: relative;
+    height: auto;
+    min-height: fit-content;
 }
 
 .portfolio {
