@@ -274,8 +274,7 @@ header {
 .my-work {
     background-color: var(--clr-dark);
     color: var(--clr-light);
-    text-align: center;    
-    max-height: 800px;
+    text-align: center;
 }
 
 .portfolio {
@@ -352,6 +351,7 @@ header {
 
 .inactivemodal {
     transform: translate(-50%, -50%) scale(0);
+    display: none;
 }
 
 .activemodal {
@@ -408,7 +408,6 @@ header {
     display: flex;
     color: var(--clr-light);
     min-height: 2em;
-    /* border-radius: 9px; */
 }
 
 .closeButton {
